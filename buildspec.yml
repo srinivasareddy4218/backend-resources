@@ -7,8 +7,8 @@ phases:
   build:
     commands:
       - npm install
-      - export BUCKET=test-for-pytests
-      - aws cloudformation package --template-file template.yml --output-template-file outputtemplate.yaml --s3-bucket test-for-pytests
+      - export BUCKET=sampledemo5
+      - aws cloudformation package --template-file template.yml --output-template-file outputtemplate.yaml --s3-bucket sampledemo5
   post_build:
     commands:
       - pip install pytest
